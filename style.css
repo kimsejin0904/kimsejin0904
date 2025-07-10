@@ -1,9 +1,30 @@
 :root {
-    --main-color: #2ecc71;
-    --text-size: 16px;
-    --primary-btn-background: #2e2e2e;
-    display:flex;
+    --primary-btn-background: #f00
+}
+input[type="url"] {
+    width: calc(100% - 1.6rem);
 }
 input[type="button"] {
-        border : 2px solid var(--primary-btn-background);
-    }
+    background-color: var(--primary-btn-background);
+    border: 2px solid var(--primary-btn-background);
+    color: var(--color-bg);
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+}
+
+.d-flex {
+    display: flex
+}
+.gap-1 {
+    gap: 1rem
+}
+.gap-2 {
+    gap: 2rem
+}
+.gap-3 {
+    gap: 3rem
+}
+.justify-center {
+    justify-content: center;
+} 
+

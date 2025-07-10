@@ -1,25 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header></header>
-    <link rel="stylesheet" src="style.css">
+    <div class="header-top">
+        <ul class="d-flex flex-end">
+            <li>
+                <a href="#">로그인</a>
+            </li>
+            <li>
+                <a href="#">회원가입</a>
+            </li>
+        </ul>
+    </div>
+    <header class="d-flex gap-3">
+        <div id="logo">사이트로고</div>
+        <nav>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">처음으로</a>
+                </li>
+                <li>
+                    <a href="#">서비스</a>
+                </li>
+                <li>
+                    <a href="#">특허</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <form action="">
-            <label>아이디</label>
-            <input type="text">
-            <label for="">비밀번호</label>
-            <input type="password">
-            <label for="">비밀번호 확인</label>
-            <input type="password">
-            <label for="">이메일</label>
-            <input type="password">
-            <label for="">sns</label>
-            <input type="password">
-
-
-
+        <h1>회원등록</h1>
+        <h2>members</h2>
+        <form action="http://localhost:5500/create" method="post">
+            <div>
+                <label>아이디</label>
+                <input type="text" name="user_id">
+            </div>
+            <div>
+                <label for="">비밀번호</label>
+                <input type="password" name="user_pwd">
+            </div>
+            <div>
+                <label for="">비밀번호 확인</label>
+                <input type="password" name="user_pwd2" id="user_pwd2">
+            </div>
+            <div>
+                <label for="">이메일</label>
+                <input type="email" name="user_email" id="user_email">
+            </div>
+            <div>
+                <label for="">sns</label>
+                <input type="url" name="" id="">
+            </div>
+            <div class="d-flex gap-1 justify-center">
+                <input type="submit" value="등록">
+                <input type="reset" value="취소">
+            </div>
         </form>
     </main>
-    <script src="main.js"></script>
-</body>
-</body>
+    <script src="index.js"></script>
+</body> 
 </html>
