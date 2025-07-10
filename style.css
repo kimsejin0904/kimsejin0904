@@ -1,0 +1,9 @@
+:root {
+    --main-color: #2ecc71;
+    --text-size: 16px;
+    --primary-btn-background: #2e2e2e;
+    display:flex;
+}
+input[type="button"] {
+        border : 2px solid var(--primary-btn-background);
+    }
